@@ -1,0 +1,127 @@
+.settingsModal{
+	z-index: 10;
+	position: absolute;
+ 	margin: 0;
+ 	top: 6.5rem;
+  right: 7rem;
+ 	width: 15rem;
+	height: 20rem;
+	background: #FFF;
+  border: 1px grey solid;
+  color: #282828;
+}
+
+
+.popUpContainer{
+  display: none;
+  z-index: 11;
+  width: 30rem;
+  height: 100px;
+  background: #6D788D;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popUpContainer_message{
+  color: white;
+  position: absolute;
+  margin: 0;
+  line-height: 0;
+  top: 50%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  width: 100%;
+  font-size: 16px;
+}
+
+/*Buttons*/
+
+.yesBtn{
+  background: #FC7169;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+}
+
+.noBtn{
+  background: #6D788D;
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+}
+
+.noBtn, .yesBtn{
+  color: #FFF6F6;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 10px 30px;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
+
+}
+
+/*Close Button*/
+
+.close {
+  position: absolute;
+  right: 13px;
+  top: 7px;
+  width: 23px;
+  height: 17px;
+  opacity: .7;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #FC7169;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+
+.deleteBtn{
+  font-size: 14px;
+  padding: .4rem .5rem;
+  font-weight: 400;
+  background: #E1E1E1;
+  color: #CB2431;
+  border: #C9CCCE solid 1px;
+}
+
+.deleteBtn:hover{
+  background: #CB2431;
+  color: #FFF;
+}
+
+.settingsTitle{
+  font-weight: 300;
+}
+
+.settingsFields{
+  width: 50%;
+  text-align: left;
+}
+.settingsEditBtns{
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.editBtn{
+  display: inline-block;
+}
